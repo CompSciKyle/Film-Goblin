@@ -1,0 +1,31 @@
+{{> Header }}
+
+<div id="watchlist">
+    <h1>My Watchlist</h1>
+
+    {{#unless movie}}
+        <p>No movies found</p>
+    {{else}}
+        <ul>
+            {{#each movie}}
+                <li class="movie-item" movie-id="{{ this.id }}">
+                    <div class="movie-info">
+                        <h2>{{this.name}}</h2>
+                        <p>Director: {{this.director}}</p>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    {{/unless}}
+
+    <form method="GET" action="{{ path 'watchlist/new' }}" id="new-movie-form">
+        <button type="submit" id="new-movie-form-submit-button">Add Movie</button>
+    </form>
+
+    <form id="delete-watchlist-movie" action="/watchlist" method="POST">
+        <input type="hidden" name="method" value="DELETE">
+        <button type="submit" id="delete-movie-form-submit-button">Delete all movies</button>
+    </form>
+</div>
+
+{{> Footer }}

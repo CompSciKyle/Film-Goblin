@@ -1,0 +1,24 @@
+{{> Header }}
+
+<div class="new-movie">
+<h1>Add Movie</h1>
+
+<h1> {{errorMessage}}</h1>
+
+<form method="POST" action="{{ path 'movies' }}" id="new-movie-form">
+	<fieldset class="grid">
+		<label>
+			Name of movie
+			<input type="text" name="name">
+		</label>
+        <label>
+            Director
+            <input type="text" name="director">
+        </label>
+	</fieldset>
+	<input type="submit" value="Add" id="new-movie-form-submit-button">
+</form>
+
+</div>
+
+{{> Footer}}

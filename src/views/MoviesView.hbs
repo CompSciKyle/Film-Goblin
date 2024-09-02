@@ -1,0 +1,29 @@
+{{> Header }}
+
+<div id="movies">
+    <h1>Movies</h1>
+    {{#if isLoggedIn}}
+        {{#unless movie}}
+            <p>No movies found</p>
+        {{else}}
+            <ol id="movie">
+                {{#each movie}}
+                    <li movie-id="{{ this.id }}">
+                        <a href="/movies/{{ this.id }}">{{ this.name }}</a>
+                    </li>
+                {{/each}}
+            </ol>
+        {{/unless}}
+    {{else}}
+        <ol id="movie">
+            {{#each movie}}
+                <li>
+                    <strong>{{ this.name }}</strong> 
+                    Directed by {{ this.director }} <br>
+                </li>
+            {{/each}}
+        </ol>
+    {{/if}}
+</div>
+
+{{> Footer}}

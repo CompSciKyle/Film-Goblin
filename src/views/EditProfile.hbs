@@ -1,0 +1,28 @@
+{{>Header}}
+
+<div class="new-movie">
+<h1>Edit User Profile</h1>
+
+<p>{{errorMessage}}</p>
+
+<form action="{{path 'users'}}/{{ user.id }}" method="POST" id="edit-user-form">
+	<input type="hidden" name="method" value="PUT">
+    <fieldset class="grid">
+    <img src="{{user.profile}}">
+
+    <label>Email:</label>
+    <input type="email" name="email" id="email" value="{{ user.email }}" style="margin: 10px; padding: 5px;">
+
+    <label>New Password:</label>
+    <input type="password" name="password" id="password" style="margin: 10px;">
+
+    <label>Profile Picture:</label>
+    <input type="text" name="profile" id="profile" value="{{user.profile}}" style="margin: 10px; width: 30%;">
+
+    </fieldset>
+
+    <input type="submit" id="edit-user-form-submit-button" value="Edit">
+</form>
+
+</div>
+{{>Footer}}

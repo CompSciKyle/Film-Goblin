@@ -1,0 +1,31 @@
+{{> Header }}
+
+<div class="new-movie">
+<h1>Edit Movie</h1>
+
+<form action="{{path 'movies'}}/{{ movie.id }}" method="POST" id="edit-movie-form">
+	<input type="hidden" name="method" value="PUT">
+	<fieldset class="grid">
+		<label>
+			Name of movie
+			<input type="text" name="name" placeholder="Enter new name" id="name" value="{{movie.name}}">
+		</label>
+        <label>
+            Director
+            <input type="text" name="director" placeholder="Enter new director" id="director" value="{{movie.director}}">
+        </label>
+        <label>
+            Poster Picture
+            <input type="text" name="picture" id="picture" value="{{movie.picture}}">
+        </label>
+		<label>Synopsis
+			<textarea name="synopsis" placeholder="Enter Synopsis" id="synopsis">{{movie.synopsis}}</textarea>
+			</label>
+	</fieldset>
+
+	<input type="submit" value="Edit" id="edit-movie-form-submit-button">
+</form>
+
+</div>
+
+{{> Footer }}

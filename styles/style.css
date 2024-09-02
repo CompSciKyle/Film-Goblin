@@ -1,0 +1,351 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    display: flex;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.actions button:hover {
+    background-color: #45a049;
+}
+
+/* Search bar */
+.search-bar {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Register and login */
+.register-login {
+    display: flex;
+    align-items: center;
+}
+
+.big-picture {
+    margin-top: 35px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 10px;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+ul{
+    display: flex;
+    text-decoration: none;
+}
+
+/* Movies */
+#movies {
+    padding: 20px;
+    text-align: center;
+}
+
+#movies h1 {
+    font-size: 36px; 
+    margin-bottom: 20px;
+}
+
+#movies ol {
+    padding: 0;
+    margin: 0 auto; 
+    max-width: 100px; 
+}
+
+#movies li {
+    margin-bottom: 10px;
+    font-size: 26px;
+    list-style-type: decimal; 
+}
+
+#movies li a {
+    text-decoration: none;
+    color: #116947;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*AUTHENTICATION*/
+.auth {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth form {
+    text-align: center;
+}
+
+.auth label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.auth input[type="email"],
+.auth input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.auth button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #116947;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*Add Movie View*/
+.new-movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-movie h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.new-movie form {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-movie label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.new-movie input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.new-movie input[type="submit"] {
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+    background-color: #116947;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.new-movie textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/*Movie view*/
+.movie-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.movie-info, .review-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-info h1, .review-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.movie-info h2, .review-section h2, .review-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Styling for buttons */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Genre list styling enhanced for side-by-side display */
+.genre-list {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.genre-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.genre-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+ol {
+    padding-left: 20px;
+    margin-right: 20px; 
+}
+
+.genre-form {
+    flex-basis: 30%; 
+    margin-right: 20%;
+}
+
+.genre-form label, .genre-form select, .genre-form input[type="submit"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#new-genre-form-submit-button, #delete-movie-form button, #delete-review button {
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+
+#new-genre-form-submit-button, #delete-movie-form button, #delete-review button {
+    width: auto;
+    margin-top: 10px;
+}
+
+
+/* Watchlist */
+#watchlist {
+    padding: 20px;
+    text-align: center;
+}
+
+#watchlist h1 {
+    font-size: 36px; 
+    margin-bottom: 20px;
+}
+
+.movie-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.movie-info {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#new-movie-form,
+#delete-watchlist-movie {
+    margin-top: 20px;
+}
+
+#new-movie-form button,
+#delete-watchlist-movie button {
+    background-color: #116947;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}

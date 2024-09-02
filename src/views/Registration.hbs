@@ -1,0 +1,22 @@
+{{>Header}}
+
+<div class="auth">
+<h1>REGISTER</h1>
+
+<p id="error">{{errorMessage}}</p>
+
+    <form method="POST" action="/users" id="register-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br>
+
+        <button type="submit" id="register-form-submit-button">Register</button>
+    </form>
+</div>
+
+{{>Footer}}

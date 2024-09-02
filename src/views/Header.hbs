@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ styles 'style.css' }}">
+	<title>{{ title }}</title>
+</head>
+
+<body>
+	<header>
+		<div class="navbar">
+        <div class="logo">
+        <h1><a href="{{path ''}}">Film Goblin</a></h1>
+         {{#if user.profile}}
+        <img src="{{user.profile}}" style="width: 30px; height: 30px;">
+    {{/if}}
+        </div>
+        <div class="actions">
+          <form method="POST" action="{{ path 'search' }}" id="search-form">
+        <div class="search-bar">
+            <input type="text" name="email" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </form>
+        <ul>
+            <li><a href="{{ path 'register' }}">Register</a></li>
+             {{#if isLoggedIn}}
+                    <li><a href="{{ path 'logout' }}">Logout</a></li>
+					{{else}}
+                    <li><a href="{{ path 'login' }}">Login</a></li>
+                {{/if}}
+                 <li>
+                    <select onchange="location = this.value;">
+                        <option value="" disabled selected>...</option>
+                        <option value="{{ path 'movies' }}">Movies</option>
+                        <option value="{{ path 'movies/new' }}">Add Movie</option>
+                        <option value="{{path 'movies/top'}}">Top Movies</option>
+                        <option value="{{path 'watchlist'}}">Watchlist</option>
+                        {{#if user.id}}
+                        <option value="{{path 'users'}}/{{ user.id }}/edit">Edit User</option> 
+                        {{/if}}
+                        {{#if movie.id}} 
+                        <option value="{{path 'movies'}}/{{ movie.id }}/edit">Edit Movie</option>
+                        <option value="{{path 'movies'}}/{{ movie.id }}/review">Add Review</option>
+                        {{/if}}
+                    </select>
+                </li>
+        </ul>
+        </div>
+    </div>
+	</header> 
+	<main>

@@ -1,0 +1,17 @@
+{{>Header}}
+
+<div class="new-movie">
+    <p>{{errorMessage}}</p>
+    <h1>Add Review</h1>
+<form action="{{path 'movies'}}/{{ movie.id }}/review" method="POST">
+    <label for="comment">Comment:</label><br>
+    <textarea id="comment" name="comment"></textarea><br><br>
+
+    <label for="rating">Rating:</label><br>
+    <input type="number" id="rating" name="rating" min="1" max="10"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+</div>
+
+{{>Footer}}

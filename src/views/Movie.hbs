@@ -1,0 +1,64 @@
+{{> Header }}
+
+<section class="movie-details">
+    <div class="movie-info">
+        <h1>Movie: {{ movie.name }}</h1>
+        <h2>Director: {{ movie.director }}</h2>
+        {{#if movie.picture}}
+        <img src="{{ movie.picture }}" alt="Movie Poster" style="width: 150px; height: 200px;">
+        {{/if}}
+        <h2>Synopsis: {{ movie.synopsis }}</h2>
+    </div>
+
+    <div class="review-section">
+        <h1>Review:</h1>
+        {{#if review}}
+            <h2>Comment: {{ review.comment }}</h2>
+            <h2>Rating: {{ review.rating }}</h2>
+        {{else}}
+            <h2>No reviews available</h2>
+        {{/if}}
+
+        <form id="delete-review" action="/movies/{{ movie.id }}/review" method="POST">
+            <input type="hidden" name="method" value="DELETE">
+            <button type="submit">Delete Review</button>
+        </form>
+    </div>
+</section>
+
+<div class="genre-list">
+    <h2>Genres</h2>
+    <div class="genre-content">
+        {{#unless genres}}
+            <h3>No genres added</h3>
+        {{else}}
+            <ol>
+                {{#each genres}}
+                    <li>{{ this.name }}</li>
+                {{/each}}
+            </ol>
+        {{/unless}}
+        <form method="POST" action="{{ path 'movies' }}/{{ movie.id }}/genre" id="new-genre-form" class="genre-form">
+            <label for="genre-select">Choose a genre:</label>
+            <select name="name" id="genre-select">
+                <option value="Comedy">Comedy</option>
+                <option value="Romance">Romance</option>
+                <option value="Action">Action</option>
+                <option value="Scifi">Scifi</option>
+                <option value="Horror">Horror</option>
+                <option value="Drama">Drama</option>
+                <option value="Thriller">Thriller</option>
+            </select>
+            <input type="submit" value="Add" id="new-genre-form-submit-button">
+        </form>
+    </div>
+</div>
+
+
+
+<form id="delete-movie-form" action="/movies/{{ movie.id }}" method="POST">
+    <input type="hidden" name="method" value="DELETE">
+    <button type="submit">Delete Movie</button>
+</form>
+
+{{> Footer }}
