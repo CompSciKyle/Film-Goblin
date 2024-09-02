@@ -1,17 +1,55 @@
 Introducing "Film Goblin" - an interactive movie tracker web application where users can rate movies, add reviews and look at the other users' favourite movies. This app is for:
-- Cinephiles
-- Movie critics
-- Humanities students who need ideas for their class
-
-Film Goblin unlike other apps like this, is simple and easy to work with. We want our users to have access to other users profile and see their reviews. 
 
 ![Banner](images/goblin.jpg)
 
+## Setting Up
+- Open with docker container
+-  Open terminal
+-  Run: npm install
+-  Run: npm run server
+-  Open browser url
+-  Type: http://localhost:3000/
+ 
 ## Core Functionality
 
-- **Profile:** Users have a profile photo, movies they've reviewed and their top movie.
-- **Watchlist:** Users have the ability to add movies to their watchlist or clear them all
-- **Edit:** Users can delete reviews or edit their profile whenever they like. 
+### Register An Account and Login
+
+![image](https://github.com/user-attachments/assets/64c507d8-8b8d-42a1-90ad-5fb15f47e8be)
+
+### Adding a movie you've watched to your account
+
+Located at the top right - Add Movie
+
+![image](https://github.com/user-attachments/assets/eb3a6e72-c451-46a7-a914-10a0bc27350f)
+
+### Locating all the movies you've seen after adding them 
+
+Locatedd at the top right - Movies
+
+![image](https://github.com/user-attachments/assets/eb3a6e72-c451-46a7-a914-10a0bc27350f)
+
+### Adding a top movie
+
+Located at the right after creating a movie 'Add Review'
+
+![image](https://github.com/user-attachments/assets/89385c06-6102-4213-b067-ab0346ee0967)
+
+Ur top 10 rated movies will be listed in your top movies
+
+### Searching your friends top movies
+
+Type in your friends email 
+
+![image](https://github.com/user-attachments/assets/2a236547-a1e7-449c-881e-776d734400a2)
+
+### Adding movie to your watchlist 
+
+Click on Watchlist in the top right and add a movie
+![image](https://github.com/user-attachments/assets/a8aae2fe-20f4-4252-bb7e-e3c0cc2b3c90)
+
+
+
+# Application Design
 
 ## Requirements
 
