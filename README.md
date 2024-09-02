@@ -5,8 +5,8 @@ Introducing "Film Goblin" - an interactive movie tracker web application where u
 ## Setting Up
 - Open with docker container
 -  Open terminal
--  Run: npm install
--  Run: npm run server
+-  `Run: npm install`
+-  `Run: npm run server`
 -  Open browser url
 -  Type: http://localhost:3000/
  
