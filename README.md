@@ -14,7 +14,7 @@ Introducing "Film Goblin" - an interactive movie tracker web application where u
 
 ### Register An Account and Login
 
-![image](https://github.com/user-attachments/assets/64c507d8-8b8d-42a1-90ad-5fb15f47e8be)
+<img src="https://github.com/user-attachments/assets/64c507d8-8b8d-42a1-90ad-5fb15f47e8be" width="100" height="100">
 
 ### Adding a movie you've watched to your account
 
