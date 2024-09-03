@@ -20,34 +20,33 @@ Introducing "Film Goblin" - an interactive movie tracker web application where u
 
 Located at the top right - Add Movie
 
-![image](https://github.com/user-attachments/assets/eb3a6e72-c451-46a7-a914-10a0bc27350f)
+<img src="https://github.com/user-attachments/assets/eb3a6e72-c451-46a7-a914-10a0bc27350f" width="auto" height="100">
 
-### Locating all the movies you've seen after adding them 
+### Locating all the movies you've seen after adding them
 
-Locatedd at the top right - Movies
+Located at the top right - Movies
 
-![image](https://github.com/user-attachments/assets/eb3a6e72-c451-46a7-a914-10a0bc27350f)
+<img src="https://github.com/user-attachments/assets/eb3a6e72-c451-46a7-a914-10a0bc27350f" width="auto" height="100">
 
 ### Adding a top movie
 
 Located at the right after creating a movie 'Add Review'
 
-![image](https://github.com/user-attachments/assets/89385c06-6102-4213-b067-ab0346ee0967)
+<img src="https://github.com/user-attachments/assets/89385c06-6102-4213-b067-ab0346ee0967" width="auto" height="100">
 
 Ur top 10 rated movies will be listed in your top movies
 
-### Searching your friends top movies
+### Searching your friends' top movies
 
-Type in your friends email 
+Type in your friend's email 
 
-![image](https://github.com/user-attachments/assets/2a236547-a1e7-449c-881e-776d734400a2)
+<img src="https://github.com/user-attachments/assets/2a236547-a1e7-449c-881e-776d734400a2" width="auto" height="100">
 
-### Adding movie to your watchlist 
+### Adding a movie to your watchlist
 
 Click on Watchlist in the top right and add a movie
-![image](https://github.com/user-attachments/assets/a8aae2fe-20f4-4252-bb7e-e3c0cc2b3c90)
 
-
+<img src="https://github.com/user-attachments/assets/a8aae2fe-20f4-4252-bb7e-e3c0cc2b3c90" width="auto" height="100">
 
 # Application Design
 
