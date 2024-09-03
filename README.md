@@ -46,7 +46,7 @@ Type in your friend's email
 
 Click on Watchlist in the top right and add a movie
 
-<img src="https://github.com/user-attachments/assets/a8aae2fe-20f4-4252-bb7e-e3c0cc2b3c90" width="auto" height="100">
+<img src="https://github.com/user-attachments/assets/a8aae2fe-20f4-4252-bb7e-e3c0cc2b3c90" width="auto" height="200">
 
 # Application Design
 
