@@ -40,7 +40,7 @@ Ur top 10 rated movies will be listed in your top movies
 
 Type in your friend's email 
 
-<img src="https://github.com/user-attachments/assets/2a236547-a1e7-449c-881e-776d734400a2" width="auto" height="100">
+<img src="https://github.com/user-attachments/assets/2a236547-a1e7-449c-881e-776d734400a2" width="auto" height="50">
 
 ### Adding a movie to your watchlist
 
