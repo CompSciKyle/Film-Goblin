@@ -20,13 +20,13 @@ Introducing "Film Goblin" - an interactive movie tracker web application where u
 
 Located at the top right - Add Movie
 
-<img src="https://github.com/user-attachments/assets/eb3a6e72-c451-46a7-a914-10a0bc27350f" width="auto" height="100">
+<img src="https://github.com/user-attachments/assets/eb3a6e72-c451-46a7-a914-10a0bc27350f" width="auto" height="200">
 
 ### Locating all the movies you've seen after adding them
 
 Located at the top right - Movies
 
-<img src="https://github.com/user-attachments/assets/eb3a6e72-c451-46a7-a914-10a0bc27350f" width="auto" height="100">
+<img src="https://github.com/user-attachments/assets/eb3a6e72-c451-46a7-a914-10a0bc27350f" width="auto" height="200">
 
 ### Adding a top movie
 
